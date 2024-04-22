@@ -1,0 +1,18 @@
+xpath_tc___page_notfount:
+  icon: //android.widget.LinearLayout[@resource-id="com.avjindersinghsekhon.minimaltodo:id/toDoEmptyView"]/android.widget.ImageView
+  text: //android.widget.TextView[@text="You don't have any todos"]
+
+xpath_tc___button__create_lise: //android.widget.ImageView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB"]
+xpath_tc___button__confirm_lise: //android.widget.ImageView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/makeToDoFloatingActionButton"]
+xpath_tc___button__select_name_list: //android.widget.TextView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/toDoListItemTextview"]
+xpath_tc___button__select_name_list_ary: xpath=(//android.widget.TextView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/toDoListItemTextview"])[***INDEX***]
+xpath_tc___button__select_date_list: //android.widget.TextView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/todoListItemTimeTextView"]
+xpath_tc___button__add_date: //android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/newTodoDateEditText"]
+xpath_tc___button__add_time: //android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/newTodoTimeEditText"]
+xpath_tc___button__confirm_datetime: //android.widget.Button[@resource-id="com.avjindersinghsekhon.minimaltodo:id/ok"]
+xpath_tc___button__notification: //android.widget.Switch[@resource-id="com.avjindersinghsekhon.minimaltodo:id/toDoHasDateSwitchCompat"]
+
+xpath_tc___input__list: //android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/userToDoEditText"]
+
+xpath_tc___text__message_notification: //android.widget.TextView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/newToDoDateTimeReminderTextView"]
+xpath_tc___text__message_notification_error: //android.widget.TextView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/newToDoDateTimeReminderTextView"]

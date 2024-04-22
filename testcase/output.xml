@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-22T13:22:31.111627" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc 06" source="C:\Users\luyto\OneDrive\เดสก์ท็อป\Ouiz4\testcase\tc_06.robot">
+<test id="s1-t1" name="Test case 06" line="6">
+<kw name="Open application page" owner="tc_keyword">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=${open_app ['url']}</arg>
+<arg>alias=${open_app ['alias']}</arg>
+<arg>automationName=${open_app ['automationName']}</arg>
+<arg>deviceName=${open_app ['deviceName']}</arg>
+<arg>platformName=${open_app ['platformName']}</arg>
+<arg>platformVersion=${open_app ['platformVersion']}</arg>
+<arg>appPackage=${open_app ['appPackage']}</arg>
+<arg>appActivity=${open_app ['appActivity']}</arg>
+<arg>noReset=false</arg>
+<arg>noScreenshot=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-04-22T13:22:31.706550" elapsed="7.217247"/>
+</kw>
+<doc>เปิดแอปพลิเคชัน</doc>
+<status status="PASS" start="2024-04-22T13:22:31.705553" elapsed="7.218244"/>
+</kw>
+<kw name="Click create list" owner="tc_keyword">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:38.927843" level="INFO">Clicking element '//android.widget.ImageView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB"]'.</msg>
+<msg time="2024-04-22T13:22:40.117497" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB"]</msg>
+<arg>${xpath_tc___button__create_lise}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T13:22:38.924821" elapsed="1.192731"/>
+</kw>
+<doc>คลิก 'เพิ่มรายการใหม่'</doc>
+<status status="PASS" start="2024-04-22T13:22:38.924821" elapsed="1.192731"/>
+</kw>
+<kw name="Input name list" owner="tc_keyword">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:41.303928" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/userToDoEditText"]
+xpath criteria: //android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/userToDoEditText"]</msg>
+<arg>${xpath_tc___input__list}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-04-22T13:22:40.120063" elapsed="1.183865"/>
+</kw>
+<kw name="Clear Text" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:41.306973" level="INFO">Clear text field '//android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/userToDoEditText"]'</msg>
+<msg time="2024-04-22T13:22:41.404653" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/userToDoEditText"]</msg>
+<arg>${xpath_tc___input__list}</arg>
+<doc>Clears the text field identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T13:22:41.303928" elapsed="0.100725"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:41.407683" level="INFO">Typing text 'Create list' into text field '//android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/userToDoEditText"]'</msg>
+<msg time="2024-04-22T13:22:42.114057" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/userToDoEditText"]</msg>
+<arg>${xpath_tc___input__list}</arg>
+<arg>${name}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T13:22:41.404653" elapsed="0.709404"/>
+</kw>
+<arg>${tc_06 ['create'] ['name']}</arg>
+<doc>กรอก 'ชื่อรายการ'</doc>
+<status status="PASS" start="2024-04-22T13:22:40.117552" elapsed="1.996505"/>
+</kw>
+<kw name="Click notification" owner="tc_keyword">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:42.117110" level="INFO">Clicking element '//android.widget.Switch[@resource-id="com.avjindersinghsekhon.minimaltodo:id/toDoHasDateSwitchCompat"]'.</msg>
+<msg time="2024-04-22T13:22:43.115849" level="INFO">xpath criteria: //android.widget.Switch[@resource-id="com.avjindersinghsekhon.minimaltodo:id/toDoHasDateSwitchCompat"]</msg>
+<arg>${xpath_tc___button__notification}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T13:22:42.115585" elapsed="1.000264"/>
+</kw>
+<doc>คลิก 'การแจ้งเตือน'</doc>
+<status status="PASS" start="2024-04-22T13:22:42.115585" elapsed="1.000264"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-22T13:22:45.118482" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-22T13:22:43.117372" elapsed="2.001110"/>
+</kw>
+<kw name="Click add date" owner="tc_keyword">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:45.121525" level="INFO">Clicking element '//android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/newTodoDateEditText"]'.</msg>
+<msg time="2024-04-22T13:22:45.306846" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/newTodoDateEditText"]</msg>
+<arg>${xpath_tc___button__add_date}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T13:22:45.120000" elapsed="0.186846"/>
+</kw>
+<doc>คลิก 'เพิ่มวันเดือนปี'</doc>
+<status status="PASS" start="2024-04-22T13:22:45.118482" elapsed="0.188364"/>
+</kw>
+<kw name="Click confirm datetime" owner="tc_keyword">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:45.309854" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.avjindersinghsekhon.minimaltodo:id/ok"]'.</msg>
+<msg time="2024-04-22T13:22:47.018302" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.avjindersinghsekhon.minimaltodo:id/ok"]</msg>
+<arg>${xpath_tc___button__confirm_datetime}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T13:22:45.307840" elapsed="1.710462"/>
+</kw>
+<doc>คลิก 'ยืนยันวันเวลา'</doc>
+<status status="PASS" start="2024-04-22T13:22:45.307840" elapsed="1.710462"/>
+</kw>
+<kw name="Click add time" owner="tc_keyword">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:47.022348" level="INFO">Clicking element '//android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/newTodoTimeEditText"]'.</msg>
+<msg time="2024-04-22T13:22:47.671066" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.avjindersinghsekhon.minimaltodo:id/newTodoTimeEditText"]</msg>
+<arg>${xpath_tc___button__add_time}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T13:22:47.019811" elapsed="0.651255"/>
+</kw>
+<doc>คลิก 'เพิ่มเวลา'</doc>
+<status status="PASS" start="2024-04-22T13:22:47.019811" elapsed="0.652249"/>
+</kw>
+<kw name="Click confirm datetime" owner="tc_keyword">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:47.675326" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.avjindersinghsekhon.minimaltodo:id/ok"]'.</msg>
+<msg time="2024-04-22T13:22:49.150313" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.avjindersinghsekhon.minimaltodo:id/ok"]</msg>
+<arg>${xpath_tc___button__confirm_datetime}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T13:22:47.672060" elapsed="1.478253"/>
+</kw>
+<doc>คลิก 'ยืนยันวันเวลา'</doc>
+<status status="PASS" start="2024-04-22T13:22:47.672060" elapsed="1.478253"/>
+</kw>
+<kw name="Verify notification error" owner="tc_keyword">
+<kw name="Element Should Contain Text" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:49.154855" level="INFO">Verifying element '//android.widget.TextView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/newToDoDateTimeReminderTextView"]' contains text 'The date you entered is in the past.'.</msg>
+<msg time="2024-04-22T13:22:49.764528" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/newToDoDateTimeReminderTextView"]</msg>
+<arg>${xpath_tc___text__message_notification_error}</arg>
+<arg>The date you entered is in the past.</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-04-22T13:22:49.152326" elapsed="0.612202"/>
+</kw>
+<doc>ตรวจสอบ ข้อความแจ้งเตือนผิดพลาด</doc>
+<status status="PASS" start="2024-04-22T13:22:49.151329" elapsed="0.614724"/>
+</kw>
+<kw name="Click confirm list" owner="tc_keyword">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:49.768564" level="INFO">Clicking element '//android.widget.ImageView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/makeToDoFloatingActionButton"]'.</msg>
+<msg time="2024-04-22T13:22:49.917479" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="com.avjindersinghsekhon.minimaltodo:id/makeToDoFloatingActionButton"]</msg>
+<arg>${xpath_tc___button__confirm_lise}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T13:22:49.767055" elapsed="0.150424"/>
+</kw>
+<doc>คลิก 'ยืนยันรายการ'</doc>
+<status status="PASS" start="2024-04-22T13:22:49.766053" elapsed="0.151426"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-22T13:22:51.919004" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-22T13:22:49.918484" elapsed="2.000520"/>
+</kw>
+<kw name="Verify page not fount" owner="tc_keyword">
+<kw name="Element Should Be Visible" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:51.999397" level="INFO">xpath criteria: //android.widget.LinearLayout[@resource-id="com.avjindersinghsekhon.minimaltodo:id/toDoEmptyView"]/android.widget.ImageView</msg>
+<arg>${xpath_tc___page_notfount ['icon']}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" start="2024-04-22T13:22:51.920521" elapsed="0.079387"/>
+</kw>
+<kw name="Element Should Be Visible" owner="AppiumLibrary">
+<msg time="2024-04-22T13:22:52.081293" level="INFO">xpath criteria: //android.widget.TextView[@text="You don't have any todos"]</msg>
+<arg>${xpath_tc___page_notfount ['text']}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" start="2024-04-22T13:22:51.999908" elapsed="0.081385"/>
+</kw>
+<doc>ตรวจสอบ หน้ารายการว่าง</doc>
+<status status="PASS" start="2024-04-22T13:22:51.920010" elapsed="0.162289"/>
+</kw>
+<doc>ทดสอบ สร้างรายการ กรณี เลือกวัน และเวลาที่เป็นอดีต</doc>
+<tag>tc_06</tag>
+<status status="PASS" start="2024-04-22T13:22:31.702562" elapsed="20.379737"/>
+</test>
+<status status="PASS" start="2024-04-22T13:22:31.114153" elapsed="20.969454"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">tc_06</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc 06">Tc 06</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

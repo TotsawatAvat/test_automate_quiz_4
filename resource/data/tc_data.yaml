@@ -1,0 +1,42 @@
+open_app:
+  url: 'http://192.168.1.9:4723/wd/hub'
+  alias: 'Myapp'
+  automationName: 'UiAutomator2'
+  deviceName: 'Phone'
+  platformName: 'Android'
+  platformVersion: '10.0'
+  appPackage: 'com.avjindersinghsekhon.minimaltodo'
+  appActivity: 'com.example.avjindersinghsekhon.toodle.MainActivity'
+
+tc_01:
+  create:
+    name: Create list
+  edit:
+    name: Edit list
+  delete:
+    position:
+      start_x: '212'
+      end_x: '1080'
+      start_y: '256'
+      duration: '1000'
+
+tc_03:
+  create:
+    name: Create list
+
+tc_04:
+  create:
+    list1: 
+      index: '1'
+      name: Create list
+    list2:
+      index: '2'
+      name: Create list
+
+tc_05:
+  create:
+    name: Xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxX
+
+tc_06:
+  create:
+    name: Create list
